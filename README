@@ -5,38 +5,38 @@ to browse the library is inspired by Rhythmbox but Ario aims to be much
 lighter and faster.
 
 Runtime requirements:
-  cygwin-1.7.0-51
-  libcurl4-7.19.4-1
-  libdbus-glib_1_2-0.80-10
-  libgcc1-4.3.2-2
+  cygwin-1.7.1-1
+  libcurl4-7.19.6-1
+  libdbus-glib_1_2-0.82-1
+  libgcc1-4.3.4-3
   libgcrypt11-1.4.1-4
-  libgdk_pixbuf2.0_0-2.16.3-1
-  libglib2.0_0-2.20.4-1
-  libgtk2.0_0-2.16.3-1
+  libgdk_pixbuf2.0_0-2.18.6-1
+  libglib2.0_0-2.22.4-2
+  libgtk2.0_0-2.18.6-1
   libintl8-0.17-11
+  libmpdclient2-2.1-1
   libnotify1-0.4.5-10
-  libpango1.0_0-1.24.3-1
-  libsoup2.4_1-2.26.3-1
-  libtag_c0-1.5-10
-  libX11_6-1.2.1-1
-  libxml2-2.7.3-10
-  mpd-0.15.1-1
+  libpango1.0_0-1.26.2-1
+  libsoup2.4_1-2.28.2-1
+  libtag_c0-1.6-1
+  libunique1.0_0-1.0.8-1
+  libxml2-2.7.6-1
   python-2.5.4-10
-  python-gobject2-2.16.1-10
-  python-gtk2-2.14.1-1
+  python-gobject2.0-2.20.0-1
+  python-gtk2.0-2.16.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
+  autoconf2.5-2.65-1
+  automake1.10-1.10.3-1
   binutils-2.19.51-1
-  cygport-0.9.8-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
+  cygport-0.9.80-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
   gettext-devel-0.17-11
-  gnome-common-2.26.0-2
+  gnome-common-2.28.0-1
   intltool-0.40.6-1
-  libtool-2.2.7a-14
+  libtool-2.2.7a-15
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -50,128 +50,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ario-1.3-X-src.tar.bz2
+  unpack ario-1.4.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ario-1.3-X.cygport all
+  cygport ./ario-1.4.3-X.cygport all
 
 This will create:
-  /usr/src/ario-1.3-X-src.tar.bz2
-  /usr/src/ario-1.3-X.tar.bz2
+  /usr/src/ario-1.4.3-X-src.tar.bz2
+  /usr/src/ario-1.4.3-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /etc/postinstall/ario.sh
-  /usr/bin/ario.exe
-  /usr/bin/cygario.dll
-  /usr/lib/ario/plugins/audioscrobbler.ario-plugin
-  /usr/lib/ario/plugins/cygaudioscrobbler.dll
-  /usr/lib/ario/plugins/cygfilesystem.dll
-  /usr/lib/ario/plugins/cyginformation.dll
-  /usr/lib/ario/plugins/cyglibnotify.dll
-  /usr/lib/ario/plugins/cygmmkeys.dll
-  /usr/lib/ario/plugins/cygradios.dll
-  /usr/lib/ario/plugins/cygwikipedia.dll
-  /usr/lib/ario/plugins/filesystem.ario-plugin
-  /usr/lib/ario/plugins/information.ario-plugin
-  /usr/lib/ario/plugins/libaudioscrobbler.la
-  /usr/lib/ario/plugins/libfilesystem.la
-  /usr/lib/ario/plugins/libinformation.la
-  /usr/lib/ario/plugins/liblibnotify.la
-  /usr/lib/ario/plugins/libmmkeys.la
-  /usr/lib/ario/plugins/libnotify.ario-plugin
-  /usr/lib/ario/plugins/libradios.la
-  /usr/lib/ario/plugins/libwikipedia.la
-  /usr/lib/ario/plugins/mmkeys.ario-plugin
-  /usr/lib/ario/plugins/radios.ario-plugin
-  /usr/lib/ario/plugins/wikipedia.ario-plugin
-  /usr/share/applications/ario.desktop
-  /usr/share/ario/art/ario-pause.png
-  /usr/share/ario/art/ario-play.png
-  /usr/share/ario/art/ario.png
-  /usr/share/ario/art/logo.png
-  /usr/share/ario/art/play.png
-  /usr/share/ario/art/repeat.png
-  /usr/share/ario/art/shuffle.png
-  /usr/share/ario/data/profiles.xml.default
-  /usr/share/ario/plugins/audioscrobbler-prefs.ui
-  /usr/share/ario/plugins/filesystem-ui.xml
-  /usr/share/ario/plugins/icons/audioscrobbler.png
-  /usr/share/ario/plugins/icons/wikipedia.png
-  /usr/share/ario/plugins/information.ui
-  /usr/share/ario/plugins/radios-ui.xml
-  /usr/share/ario/plugins/radios.xml.default
-  /usr/share/ario/plugins/wikipedia-ui.xml
-  /usr/share/ario/ui/ario-ui.xml
-  /usr/share/ario/ui/browser-prefs.ui
-  /usr/share/ario/ui/connection-assistant.ui
-  /usr/share/ario/ui/connection-autodetect.ui
-  /usr/share/ario/ui/connection-prefs.ui
-  /usr/share/ario/ui/connection-widget.ui
-  /usr/share/ario/ui/cover-prefs.ui
-  /usr/share/ario/ui/cover-progress.ui
-  /usr/share/ario/ui/cover-select.ui
-  /usr/share/ario/ui/lyrics-prefs.ui
-  /usr/share/ario/ui/lyrics-select.ui
-  /usr/share/ario/ui/others-prefs.ui
-  /usr/share/ario/ui/playlist-prefs.ui
-  /usr/share/ario/ui/server-prefs.ui
-  /usr/share/ario/ui/similar-artists.ui
-  /usr/share/ario/ui/song-infos.ui
-  /usr/share/ario/ui/stats-prefs.ui
-  /usr/share/ario/ui/trayicon-prefs.ui
-  /usr/share/doc/ario/AUTHORS
-  /usr/share/doc/ario/COPYING
-  /usr/share/doc/ario/ChangeLog
-  /usr/share/doc/ario/NEWS
-  /usr/share/doc/ario/TODO
-  /usr/share/icons/hicolor/128x128/apps/ario.png
-  /usr/share/icons/hicolor/16x16/apps/ario.png
-  /usr/share/icons/hicolor/22x22/apps/ario.png
-  /usr/share/icons/hicolor/24x24/apps/ario.png
-  /usr/share/icons/hicolor/256x256/apps/ario.png
-  /usr/share/icons/hicolor/32x32/apps/ario.png
-  /usr/share/icons/hicolor/48x48/apps/ario.png
-  /usr/share/icons/hicolor/64x64/apps/ario.png
-  /usr/share/icons/hicolor/72x72/apps/ario.png
-  /usr/share/icons/hicolor/96x96/apps/ario.png
-  /usr/share/icons/hicolor/scalable/apps/ario.svg
-  /usr/share/locale/ar/LC_MESSAGES/ario.mo
-  /usr/share/locale/ca/LC_MESSAGES/ario.mo
-  /usr/share/locale/cs/LC_MESSAGES/ario.mo
-  /usr/share/locale/da/LC_MESSAGES/ario.mo
-  /usr/share/locale/de/LC_MESSAGES/ario.mo
-  /usr/share/locale/en_GB/LC_MESSAGES/ario.mo
-  /usr/share/locale/es/LC_MESSAGES/ario.mo
-  /usr/share/locale/fi/LC_MESSAGES/ario.mo
-  /usr/share/locale/fr/LC_MESSAGES/ario.mo
-  /usr/share/locale/ga/LC_MESSAGES/ario.mo
-  /usr/share/locale/he/LC_MESSAGES/ario.mo
-  /usr/share/locale/hr/LC_MESSAGES/ario.mo
-  /usr/share/locale/hu/LC_MESSAGES/ario.mo
-  /usr/share/locale/id/LC_MESSAGES/ario.mo
-  /usr/share/locale/it/LC_MESSAGES/ario.mo
-  /usr/share/locale/ja/LC_MESSAGES/ario.mo
-  /usr/share/locale/nb/LC_MESSAGES/ario.mo
-  /usr/share/locale/nds/LC_MESSAGES/ario.mo
-  /usr/share/locale/nl/LC_MESSAGES/ario.mo
-  /usr/share/locale/pl/LC_MESSAGES/ario.mo
-  /usr/share/locale/pt/LC_MESSAGES/ario.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/ario.mo
-  /usr/share/locale/ro/LC_MESSAGES/ario.mo
-  /usr/share/locale/ru/LC_MESSAGES/ario.mo
-  /usr/share/locale/sv/LC_MESSAGES/ario.mo
-  /usr/share/locale/th/LC_MESSAGES/ario.mo
-  /usr/share/locale/tr/LC_MESSAGES/ario.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/ario.mo
-  /usr/share/locale/zh_TW/LC_MESSAGES/ario.mo
-
-------------------
-
 Port Notes:
+
+----- version 1.4.3-1 -----
+Version bump.
 
 ----- version 1.3-1 -----
 Initial release for Cygwin 1.7.
