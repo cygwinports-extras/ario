@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="ario"
 VERSION=1.5.1
-RELEASE=2
+RELEASE=3
 CATEGORY="Audio"
 SUMMARY="Full-featured GTK+ MPD client"
 DESCRIPTION="Ario is a GTK2 client for MPD (Music player daemon). The interface
